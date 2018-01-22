@@ -1,0 +1,62 @@
+html {
+
+}
+
+.col-lg-2 {
+    /*background-color: darkred;*/
+    border-style: solid;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: anton;
+    text-align: center;
+}
+
+p {
+    font-family: abel;
+    text-align: center;
+}
+
+.row {
+    /*background-color: grey;*/
+}
+
+#logo {
+    width: 105px
+}
+
+#logo-container {
+    background-color:white;
+    height: 10%;
+}
+
+.section {
+    background-color: grey;
+    border-style: solid;
+    margin: 40px 0 40px 0;
+}
+
+#intro-h1 {
+    font-size: 3.4em;
+    font-family: anton;
+    margin-top: 20px;
+}
+
+#intro-h2 {
+    font-family: anton;
+    margin-top: 30px;
+
+}
+
+#nav-links-container {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 5px;
+}
