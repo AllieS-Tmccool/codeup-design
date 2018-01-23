@@ -98,50 +98,27 @@
 
         #red {
             background-color: #E6563B;
-            padding-top: 7%;
-            text-align: center;
-            height:130px;
-            width: 130px;
-            border-radius: 50%;
-            border-style: solid;
-            border-color: white;
-            border-width: 8px;
-            margin: 15px;
-            /*margin-left: 50px;*/
-            color: white;
+
         }
         #orange {
             background-color: #eb9d3a;
-            padding-top: 7%;
-            text-align: center;
-            height:130px;
-            width: 130px;
-            border-radius: 50%;
-            border-style: solid;
-            border-color: white;
-            border-width: 8px;
-            margin: 15px;
-            color: white;
+
         }
         #green {
             background-color: #7cb06c;
-            padding-top: 7%;
-            text-align: center;
-            height:130px;
-            width: 130px;
-            border-radius: 50%;
-            border-style: solid;
-            border-color: white;
-            border-width: 8px;
-            margin: 15px;
-            /*margin-left: 50px;*/
-            color: white;
+
         }
         #blue {
             background-color: #00aba9;
+
+        }
+        #center {
+            text-align: center;
+        }
+        #red, #orange, #green, #blue {
             padding-top: 7%;
             text-align: center;
-            height:130px;
+            height: 130px;
             width: 130px;
             border-radius: 50%;
             border-style: solid;
@@ -150,9 +127,23 @@
             margin: 15px;
             color: white;
         }
+        @media (min-width: @screen-xs-min) {
 
-        #center {
-            text-align: center;
+            #red, #orange, #green, #blue {
+                padding-top: 7%;
+                text-align: center;
+                height: 130px;
+                width: 130px;
+                border-radius: 50%;
+                border-style: solid;
+                border-color: white;
+                border-width: 8px;
+                margin: 15px;
+                color: white;
+            }
+            #green, #red {
+                margin-left: 50px;
+            }
         }
 
     </style>
@@ -192,18 +183,22 @@
         </div>
 
         <section class="row">
-            <div id="red" class="col-xs-6">
-            <h5>DESIGN</h5>
-        </div>
-            <div id="orange" class="col-xs-6">
-                <h5>DEVELOP</h5>
-            </div>
-            <div id="green" class="col-xs-6">
-                <h5>SUPPORT</h5>
-            </div>
-            <div id="blue" class="col-xs-6">
-                <h5>HOST</h5>
-            </div>
+
+                <div id="red" class="col-xs-6">
+                <h5>DESIGN</h5>
+                </div>
+                <div id="orange" class="col-xs-6">
+                    <h5>DEVELOP</h5>
+                </div>
+
+
+                <div id="green" class="col-xs-6">
+                    <h5>SUPPORT</h5>
+                </div>
+                <div id="blue" class="col-xs-6">
+                    <h5>HOST</h5>
+                </div>
+
         </section>
 
     </section>
