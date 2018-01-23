@@ -95,7 +95,7 @@
         #navlinks {
             text-align: center;
         }
-
+/*========large colors======================*/
         #red {
               background-color: #E6563B;
 
@@ -112,7 +112,7 @@
             background-color: #00aba9;
 
         }
-
+/*==========small colors===================*/
         #small-red {
             background-color: #E6563B;
             border-radius: 50%;
@@ -195,7 +195,19 @@
             margin-top: 5px;
             margin-bottom: 50px;
         }
+        @media screen and (max-width: 759px){
 
+        }
+
+        @media screen and (min-width: 760px){
+            #red, #orange, #green, #blue {
+                padding-top: 4%;
+
+            }
+
+
+
+        }
 
     </style>
 
@@ -204,7 +216,7 @@
 <body>
 <div id="nav-background"></div>
 
-<nav class="nav clearfix">
+<nav id="xs-nav" class="nav clearfix hidden-sm">
     <div class="row">
         <!-- Branding -->
         <div class="col-xs-12">
@@ -223,6 +235,30 @@
     </div>
 </nav>
 
+<!--======small-nav======-->
+
+
+<nav id="small-nav" class="nav clearfix hidden-xs">
+    <div class="row">
+
+        <!-- nav links -->
+        <div id="navlinks" class="col-xs-12">
+            <ul>
+                <li>SERVICES</li>
+                <li>WORK</li>
+                <!-- Branding -->
+                <li><div class="col-xs-12">
+                    <img src="img/logo.png" width="105px" class="center-block">
+                    <div id=brand class="col-xs-12 center-text"><p>codeup design</p></div>
+                </div>
+                 </li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <main class="container">
     <section id="center" class="row">
@@ -232,24 +268,20 @@
         <div class="col-lg-12">
             <h3>FROM PARK CITY, UTAH</h3>
         </div>
-
+<!-- large colors-->
         <section class="row">
-
-                <div id="red" class="col-xs-6 col-xs-offset-2">
+                <div id="red" class="col-xs-6 col-xs-offset-2 col-sm-3 col-sm-offset-2">
                 <h5>DESIGN</h5>
                 </div>
-                <div id="orange" class="col-xs-6">
+                <div id="orange" class="col-xs-6 col-sm-3">
                     <h5>DEVELOP</h5>
                 </div>
-
-
-                <div id="green" class="col-xs-6 col-xs-offset-2">
+                <div id="green" class="col-xs-6 col-xs-offset-2 col-sm-3 col-sm-offset-0">
                     <h5>SUPPORT</h5>
                 </div>
-                <div id="blue" class="col-xs-6">
+                <div id="blue" class="col-xs-6 col-sm-3">
                     <h5>HOST</h5>
                 </div>
-
         </section>
 
     </section>
