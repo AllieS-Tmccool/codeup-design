@@ -97,9 +97,9 @@
         }
 
         #red {
-            background-color: #E6563B;
+              background-color: #E6563B;
 
-        }
+          }
         #orange {
             background-color: #eb9d3a;
 
@@ -110,6 +110,51 @@
         }
         #blue {
             background-color: #00aba9;
+
+        }
+
+        #small-red {
+            background-color: #E6563B;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 9px;
+
+        }
+        #small-orange {
+            background-color: #eb9d3a;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 9px;
+
+        }
+        #small-green {
+            background-color: #7cb06c;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 9px;
+
+        }
+        #small-blue {
+            background-color: #00aba9;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 9px;
 
         }
         #center {
@@ -124,27 +169,33 @@
             border-style: solid;
             border-color: white;
             border-width: 8px;
-            margin: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
             color: white;
         }
-        @media (min-width: @screen-xs-min) {
 
-            #red, #orange, #green, #blue {
-                padding-top: 7%;
-                text-align: center;
-                height: 130px;
-                width: 130px;
-                border-radius: 50%;
-                border-style: solid;
-                border-color: white;
-                border-width: 8px;
-                margin: 15px;
-                color: white;
-            }
-            #green, #red {
-                margin-left: 50px;
-            }
+        #selected-work {
+            text-align: center;
+            font-size: 1.2em;
         }
+
+        #green-apple {
+            margin-left: 20px;
+            border-style: solid;
+            border-color: #f0f0f0;
+            padding: 0;
+            border-width: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+        }
+
+        .feat-pro {
+            text-align: right;
+            margin-top: 5px;
+            margin-bottom: 50px;
+        }
+
 
     </style>
 
@@ -184,7 +235,7 @@
 
         <section class="row">
 
-                <div id="red" class="col-xs-6">
+                <div id="red" class="col-xs-6 col-xs-offset-2">
                 <h5>DESIGN</h5>
                 </div>
                 <div id="orange" class="col-xs-6">
@@ -192,7 +243,7 @@
                 </div>
 
 
-                <div id="green" class="col-xs-6">
+                <div id="green" class="col-xs-6 col-xs-offset-2">
                     <h5>SUPPORT</h5>
                 </div>
                 <div id="blue" class="col-xs-6">
@@ -204,6 +255,24 @@
     </section>
     <hr>
     <section class="container">
+        <div class="row">
+            <div id="selected-work" class="col-xs-12">
+                <p>SELECTED WORK</p>
+            </div>
+            <div id="green-apple" class="col-xs-11 col-xs-offset-1">
+                <img src="img/apple-ipad.jpg" width="100%"  alt="">
+            </div>
+            <div class="col-xs-5 feat-pro" >
+                <p>FEATURED PROJECT</p>
+            </div>
+            <div class="col-xs-7">
+                <div id="small-red" class="col-xs-3">D</div>
+                <div id="small-orange" class="col-xs-3">D</div>
+                <div id="small-green" class="col-xs-3">S</div>
+                <div id="small-blue" class="col-xs-3">H</div>
+            </div>
+
+        </div>
 
 
     </section>
